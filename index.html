@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YEMEN BRAND</title>
+</head>
+<body>
+  <html><head><base href=""><link href="css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Tajawal', sans-serif;
+    }
+    
+    .navbar {
+      background: linear-gradient(45deg, #2b1055, #7597de);
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .search-container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    
+    .nav-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+    
+    .phone-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-phone {
+        display: none;
+      }
+    }
+    
+    .search-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .search-input {
+      padding: 0.5rem 2.5rem 0.5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      font-size: 1rem;
+      width: 200px;
+      transition: all 0.3s ease;
+      direction: rtl;
+    }
+    
+    .search-input::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+    
+    .search-input:focus {
+      outline: none;
+      background: rgba(255,255,255,0.2);
+      width: 250px;
+    }
+    
+    .search-button {
+      position: absolute;
+      left: 10px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    
+    @media (max-width: 768px) {
+      .search-input {
+        width: 150px;
+      }
+      
+      .search-input:focus {
+        width: 180px;
+      }
+    }
+    
+    .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+    
+    .nav-links li a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      background: linear-gradient(90deg, #ff00ff, #0000ff);
+      transition: all 0.4s ease;
+      transform: translateX(-50%);
+    }
+    
+    .nav-links li a:hover {
+      background: linear-gradient(45deg, rgba(255,0,255,0.2), rgba(0,0,255,0.2));
+      transform: translateY(-3px);
+    }
+    
+    .nav-links li a:hover:after {
+      width: 80%;
+    }
+    
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 16, 85, 0.6); /* Subtle purple overlay */
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 2rem;
+    }
+    
+    .hero-title {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    
+    .hero-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: linear-gradient(45deg, #ff00ff, #0000ff);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      border: none;
+    }
+    
+    .hero-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255,0,255,0.3);
+    }
+    
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+    }
+    
+    .stats {
+      padding: 4rem 2rem;
+      background: linear-gradient(45deg, #2b1055, #7597de);
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    
+    .stats-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+      padding: 0 1rem;
+    }
+    
+    .stat-item {
+      flex: 0 1 auto;
+      min-width: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    
+    .stat-label {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    
+    .about-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(45deg, #252935, #2b1055);
+      color: white;
+      text-align: center;
+    }
+    
+    .about-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    
+    .about-content {
+      flex: 1;
+      text-align: right;
+    }
+    
+    .about-title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+    
+    .about-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+    
+    .about-logo {
+      flex: 0 0 300px;
+      max-width: 300px;
+      height: auto;
+    }
+    
+    .animated-shape {
+      position: absolute;
+      opacity: 0.1;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    
+    .shape1 {
+      top: 20%;
+      left: 10%;
+      animation: float 6s ease-in-out infinite;
+      fill: rgba(255,0,255,0.5);
+    }
+    
+    .shape2 {
+      bottom: 20%;
+      right: 10%;
+      animation: float 8s ease-in-out infinite reverse;
+      fill: rgba(0,0,255,0.5);
+    }
+    
+    .shape3 {
+      top: 50%;
+      left: 50%;
+      animation: pulse 4s ease-in-out infinite;
+      fill: rgba(255,192,203,0.5);
+    }
+    
+    .services-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(45deg, #252935, #2b1055);
+      color: white;
+      text-align: center;
+    }
+    
+    .services-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .service-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 2rem;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .service-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      transform: translateX(-100%);
+      transition: all 0.6s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255,0,255,0.2);
+      background: linear-gradient(45deg, rgba(255,0,255,0.1), rgba(0,0,255,0.1));
+    }
+    
+    .service-card:hover:before {
+      transform: translateX(100%);
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+      fill: white;
+      transition: all 0.4s ease;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.2));
+    }
+    
+    .service-name {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    
+    .service-description {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+    
+    .service-card:hover .service-icon {
+      transform: scale(1.1) rotate(5deg);
+      filter: drop-shadow(0 0 12px rgba(255,0,255,0.3));
+    }
+    
+    @media (max-width: 768px) {
+      /* Navigation adjustments */
+      .nav-container {
+        padding: 0 1rem;
+      }
+      
+      .nav-links {
+        display: none; /* We'll need to add a mobile menu later */
+      }
+      
+      /* Stats section */
+      .stats-container {
+        gap: 2rem;
+      }
+      
+      .stat-item {
+        min-width: 120px;
+      }
+      
+      /* About section */
+      .about-container {
+        flex-direction: column;
+        padding: 0 1rem;
+        text-align: center;
+      }
+      
+      .about-content {
+        text-align: center;
+      }
+      
+      .about-logo {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+      
+      /* Services section */
+      .services-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+      }
+      
+      /* Portfolio section */
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+      }
+      
+      .portfolio-item {
+        height: 200px;
+      }
+      
+      /* FAQ section */
+      .faq-container {
+        padding: 0 1rem;
+      }
+      
+      /* Footer adjustments */
+      .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .footer-links, .footer-contact-item, .footer-social {
+        justify-content: center;
+      }
+      
+      /* Technologies section */
+      .technologies-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      /* Adjust font sizes */
+      .about-title, .services-title, .portfolio-title, 
+      .faq-title, .technologies-title {
+        font-size: 2rem;
+      }
+      
+      .stat-number {
+        font-size: 2rem;
+      }
+      
+      .about-text, .service-description {
+        font-size: 1rem;
+      }
+      
+      /* Single column layout for technologies */
+      .technologies-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      /* Adjust padding and margins */
+      .services-section, .about-section, .portfolio-section,
+      .faq-section, .technologies-section {
+        padding: 3rem 1rem;
+      }
+      
+      .view-more-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+      }
+      
+      /* Adjust hero section */
+      .hero {
+        height: 70vh;
+      }
+    }
+    
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .technologies-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .about-container {
+        padding: 0 2rem;
+      }
+      
+      .about-logo {
+        max-width: 250px;
+      }
+    }
+    
+    @media (hover: none) {
+      .nav-links li a:hover {
+        transform: none;
+      }
+      
+      .service-card:hover {
+        transform: none;
+      }
+      
+      .portfolio-item:hover {
+        transform: none;
+      }
+      
+      .technology-item:hover {
+        transform: none;
+      }
+      
+      .view-more-btn:hover {
+        transform: none;
+      }
+    }
+    
+    body {
+      min-height: 100vh;
+      direction: rtl;
+      background: #252935;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Adding new styles for portfolio section */
+    .portfolio-section {
+      padding: 6rem 2rem;
+      background: #252935;
+      color: white;
+      text-align: center;
+    }
+    
+    .portfolio-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+    
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .portfolio-item {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 250px;
+      background: rgba(255,255,255,0.05);
+      transition: transform 0.3s ease;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255,0,255,0.2);
+    }
+    
+    .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(37, 41, 53, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .portfolio-item:hover .portfolio-overlay {
+      opacity: 1;
+    }
+    
+    .portfolio-name {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    
+    .portfolio-description {
+      font-size: 1rem;
+      color: #ccc;
+      padding: 0 1rem;
+    }
+    
+    .portfolio-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .portfolio-icon {
+      width: 60px;
+      height: 60px;
+      fill: white;
+      opacity: 0.5;
+    }
+    
+    /* FAQ Section Styles */
+    .faq-section {
+      padding: 6rem 2rem;
+      background: #252935;
+      color: white;
+      text-align: center;
+    }
+    
+    .faq-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+    
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, rgba(43,16,85,0.6), rgba(117,151,222,0.6));
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .faq-question {
+      width: 100%;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-align: right;
+      transition: background-color 0.3s ease;
+    }
+    
+    .faq-question:hover {
+      background: linear-gradient(45deg, rgba(255,0,255,0.1), rgba(0,0,255,0.1));
+    }
+    
+    .faq-icon {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      transition: transform 0.3s ease;
+    }
+    
+    .faq-answer {
+      padding: 0 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      text-align: right;
+      color: #ccc;
+      transition: all 0.3s ease;
+    }
+    
+    .faq-item.active .faq-answer {
+      padding: 1.5rem;
+      max-height: 300px;
+    }
+    
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+    
+    /* Footer Styles */
+    .footer {
+      background: linear-gradient(45deg, #2b1055, #7597de);
+      color: white;
+      padding: 4rem 2rem 2rem;
+    }
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+    }
+    
+    .footer-section {
+      text-align: right;
+    }
+    
+    .footer-title {
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    
+    .footer-content {
+      color: #ccc;
+      line-height: 1.8;
+    }
+    
+    .footer-links {
+      list-style: none;
+    }
+    
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      position: relative;
+      padding-right: 20px;
+    }
+    
+    .footer-links a:before {
+      content: '←';
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+      padding-right: 25px;
+    }
+    
+    .footer-links a:hover:before {
+      opacity: 1;
+    }
+    
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      justify-content: flex-end;
+    }
+    
+    .contact-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      margin-top: 1.5rem;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      transition: all 0.4s ease;
+      transform-origin: center;
+    }
+    
+    .social-icon:hover {
+      background: linear-gradient(45deg, rgba(255,0,255,0.3), rgba(0,0,255,0.3));
+      transform: scale(1.1) rotate(8deg);
+    }
+    
+    .footer-bottom {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      color: #ccc;
+    }
+    
+    /* New styles for view more button */
+    .view-more-btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      margin-top: 3rem;
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255,0,255,0.3);
+      border-radius: 50px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .view-more-btn:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+      transform: translateX(-100%);
+      transition: all 0.6s ease;
+    }
+    
+    .view-more-btn:hover {
+      background: linear-gradient(45deg, rgba(255,0,255,0.2), rgba(0,0,255,0.2));
+      border-color: transparent;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
+    .view-more-btn:hover:before {
+      transform: translateX(100%);
+    }
+    
+    /* New styles for technologies section */
+    .technologies-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(45deg, #252935, #2b1055);
+      color: white;
+      text-align: center;
+    }
+    
+    .technologies-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+    
+    .technologies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .technology-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: all 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .technology-item:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(45deg, rgba(255,0,255,0.1), rgba(0,0,255,0.1));
+      box-shadow: 0 5px 15px rgba(255,0,255,0.2);
+    }
+    
+    .technology-icon {
+      width: 50px;
+      height: 50px;
+      fill: white;
+      transition: all 0.4s ease;
+    }
+    
+    .technology-name {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    
+    .technology-level {
+      width: 100%;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    
+    .level-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #ff00ff, #0000ff);
+      border-radius: 3px;
+      transition: width 1s ease;
+    }
+    
+    /* Testimonials Section Styles */
+    .testimonials-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(45deg, #252935, #2b1055);
+      color: white;
+      text-align: center;
+    }
+    
+    .testimonials-title {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #fff;
+    }
+    
+    .testimonials-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+    
+    .testimonial-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: right;
+      position: relative;
+      transition: all 0.4s ease;
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(45deg, rgba(255,0,255,0.1), rgba(0,0,255,0.1));
+      box-shadow: 0 5px 15px rgba(255,0,255,0.2);
+    }
+    
+    .testimonial-quote {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    
+    .quote-icon {
+      width: 40px;
+      height: 40px;
+      fill: rgba(255,255,255,0.2);
+    }
+    
+    .testimonial-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin: 2rem 0;
+      color: #ccc;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, rgba(255,0,255,0.2), rgba(0,0,255,0.2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .avatar-icon {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+    
+    .author-info {
+      flex: 1;
+    }
+    
+    .author-name {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+    
+    .author-company {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    
+    /* Add to existing media queries */
+    @media (max-width: 768px) {
+      .testimonials-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      
+      .testimonial-card {
+        padding: 1.5rem;
+      }
+    }
+    
+    /* WhatsApp Button Styles */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      animation: pulseWhatsApp 2s infinite;
+    }
+    
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+      background: #22c15e;
+    }
+    
+    .whatsapp-icon {
+      width: 35px;
+      height: 35px;
+      fill: white;
+    }
+    
+    @keyframes pulseWhatsApp {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .whatsapp-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    </style>
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="search-container">
+            <a href="home.html" class="logo">
+              يمن براند
+            </a>
+            <div class="nav-phone">
+              <svg class="phone-icon" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>+967 773512690</span>
+            </div>
+            <form class="search-form" action="/search" method="GET">
+              <input type="search" class="search-input" placeholder="ابحث هنا..." aria-label="Search">
+              <button type="submit" class="search-button" aria-label="Search">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                  <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="we yemen brand.html">من نحن</a></li>
+            <li><a href="work.html">أعمالنا</a></li>
+            <li><a href="home.html">خدماتنا</a></li>
+            <li><a href="buy.html">الأسعار</a></li>
+            <li><a href="conecte.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <section class="hero">
+        <img src="imag/home.png" alt="Abstract Tech Art" class="hero-image">
+        <div class="hero-content">
+          <h1 class="hero-title">نبتكر حلولاً رقمية لمستقبل أفضل</h1>
+          <p class="hero-subtitle">نحن نجمع بين الإبداع والتكنولوجيا لنقدم حلولاً متكاملة تساعد عملائنا على النمو والتطور في العصر الرقمي</p>
+          <a href="conecte.html" class="hero-button">ابدأ مشروعك معنا</a>
+        </div>
+      </section>
+    
+      <section class="stats">
+        <svg class="animated-shape shape1" width="50" height="50" viewBox="0 0 50 50">
+          <circle cx="25" cy="25" r="20" fill="rgba(255,0,255,0.5)"/>
+        </svg>
+        
+        <svg class="animated-shape shape2" width="50" height="50" viewBox="0 0 50 50">
+          <rect x="10" y="10" width="30" height="30" fill="rgba(0,0,255,0.5)"/>
+        </svg>
+        
+        <svg class="animated-shape shape3" width="50" height="50" viewBox="0 0 50 50">
+          <polygon points="25,5 45,40 5,40" fill="rgba(255,192,203,0.5)"/>
+        </svg>
+        
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">عميل سعيد</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">مشروع منجز</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">موظف محترف</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">سنوات خبرة</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">نسبة رضا العملاء</div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <h2 class="about-title">من نحن</h2>
+            <p class="about-text">
+              نحن شركة رائدة في مجال التكنولوجيا والحلول الرقمية، نسعى دائماً لتقديم أفضل الخدمات لعملائنا. منذ تأسيسنا، حرصنا على بناء سمعة قوية في السوق من خلال الالتزام بأعلى معايير الجودة والاحترافية في تنفيذ المشاريع. نمتلك فريقاً من الخبراء المتخصصين في مختلف المجالات التقنية، ونستخدم أحدث التقنيات والأدوات لتحقيق رؤية عملائنا وتجاوز توقعاتهم.
+            </p>
+          </div>
+          <img src="imag/logo.png" alt="Yemen Creativity Logo" class="about-logo">
+        </div>
+      </section>
+    
+      <section class="services-section">
+        <h2 class="services-title">خدماتنا</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+            </svg>
+            <h3 class="service-name">تصميم المواقع</h3>
+            <p class="service-description">تصميم مواقع احترافية وعصرية تناسب احتياجات عملك</p>
+          </div>
+    
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16.03C15.5,15.29 16.5,13.77 16.5,12M17,12C17,14.42 15.28,16.44 13,16.9V19H11V16.9C8.72,16.44 7,14.42 7,12C7,9.58 8.72,7.56 11,7.1V5H13V7.1C15.28,7.56 17,9.58 17,12M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/>
+            </svg>
+            <h3 class="service-name">تطوير التطبيقات</h3>
+            <p class="service-description">تطوير تطبيقات موبايل متميزة لنظامي iOS و Android</p>
+          </div>
+    
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M20.71,4.63L19.37,3.29C19,2.9 18.35,2.9 17.96,3.29L9,12.25L11.75,15L20.71,6.04C21.1,5.65 21.1,5 20.71,4.63M7,14A3,3 0 0,0 4,17C4,18.31 2.84,19 2,19C2.92,20.22 4.5,21 6,21A4,4 0 0,0 10,17A3,3 0 0,0 7,14Z"/>
+            </svg>
+            <h3 class="service-name">التصميم الجرافيكي</h3>
+            <p class="service-description">تصميمات إبداعية تعبر عن هوية علامتك التجارية</p>
+          </div>
+    
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M2,3H10A2,2 0 0,1 12,1A2,2 0 0,1 14,3H22V5H21V16H15.25L17,22H15L13.25,16H10.75L9,22H7L8.75,16H3V5H2V3M5,5V14H19V5H5Z"/>
+            </svg>
+            <h3 class="service-name">العروض التقديمية</h3>
+            <p class="service-description">عروض تقديمية احترافية تناسب كافة الأغراض</p>
+          </div>
+    
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
+            </svg>
+            <h3 class="service-name">البحوث والدراسات</h3>
+            <p class="service-description">خدمات بحثية متخصصة ودراسات تحليلية شاملة</p>
+          </div>
+    
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12.87,15.07L10.33,12.56L10.36,12.53C12.1,10.59 13.34,8.36 14.07,6H17V4H10V2H8V4H1V6H12.17C11.5,7.92 10.44,9.75 9,11.35C8.07,10.32 7.3,9.19 6.69,8H4.69C5.42,9.63 6.42,11.17 7.67,12.56L2.58,17.58L4,19L9,14L12.11,17.11L12.87,15.07M18.5,10H16.5L12,22H14L15.12,19H19.87L21,22H23L18.5,10M15.88,17L17.5,12.67L19.12,17H15.88Z"/>
+            </svg>
+            <h3 class="service-name">خدمات الترجمة</h3>
+            <p class="service-description">ترجمة احترافية ودقيقة لجميع أنواع المحتوى بمختلف اللغات</p>
+          </div>
+    
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M17.36,20.2V14.82H19.15V22H3V14.82H4.8V20.2H17.36M6.77,14.32L7.14,12.56L15.93,14.41L15.56,16.17L6.77,14.32M7.93,10.11L8.69,8.5L16.83,12.28L16.07,13.9L7.93,10.11M10.19,6.12L11.34,4.74L18.24,10.5L17.09,11.87L10.19,6.12M14.64,1.87L20,9.08L18.56,10.15L13.2,2.94L14.64,1.87M6.59,18.41V16.61H15.57V18.41H6.59Z"/>
+            </svg>
+            <h3 class="service-name">إدارة الصفحات</h3>
+            <p class="service-description">إدارة احترافية لصفحات التواصل الاجتماعي وتطوير المحتوى الرقمي</p>
+          </div>
+          
+          <div class="service-card">
+            <svg class="service-icon" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8.39C13.57,9.4 15.42,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20C9,20 6.39,18.34 5,15.89L6.75,14V13A1.25,1.25 0 0,1 8,11.75A1.25,1.25 0 0,1 9.25,13V14H12M16,11.75A1.25,1.25 0 0,0 14.75,13A1.25,1.25 0 0,0 16,14.25A1.25,1.25 0 0,0 17.25,13A1.25,1.25 0 0,0 16,11.75Z"/>
+            </svg>
+            <h3 class="service-name">أدوات الذكاء الاصطناعي</h3>
+            <p class="service-description">تطوير وتنفيذ حلول ذكية باستخدام أحدث تقنيات الذكاء الاصطناعي لتحسين كفاءة الأعمال وتعزيز التحول الرقمي</p>
+          </div>
+    
+        </div>
+      </section>
+      
+      <section class="portfolio-section">
+        <h2 class="portfolio-title">أعمالنا السابقة</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio-placeholder">
+              <svg class="portfolio-icon" viewBox="0 0 30 30">
+                <path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+            </div>
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-name">موقع شركة تجارية</h3>
+              <p class="portfolio-description">تصميم وتطوير موقع متكامل لشركة تجارية رائدة</p>
+            </div>
+          </div>
+    
+          <div class="portfolio-item">
+            <div class="portfolio-placeholder">
+              <svg class="portfolio-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+            </div>
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-name">تطبيق جوال</h3>
+              <p class="portfolio-description">تطبيق متجر إلكتروني متكامل لنظامي iOS و Android</p>
+            </div>
+          </div>
+    
+          <div class="portfolio-item">
+            <div class="portfolio-placeholder">
+              <svg class="portfolio-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+            </div>
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-name">هوية بصرية</h3>
+              <p class="portfolio-description">تصميم هوية بصرية متكاملة لشركة ناشئة</p>
+            </div>
+          </div>
+    
+          <div class="portfolio-item">
+            <div class="portfolio-placeholder">
+              <svg class="portfolio-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+            </div>
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-name">منصة تعليمية</h3>
+              <p class="portfolio-description">تطوير منصة تعليمية تفاعلية متكاملة</p>
+            </div>
+          </div>
+    
+          <div class="portfolio-item">
+            <div class="portfolio-placeholder">
+              <svg class="portfolio-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+            </div>
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-name">نظام إدارة</h3>
+              <p class="portfolio-description">تطوير نظام إدارة متكامل لشركة خدمية</p>
+            </div>
+          </div>
+    
+          <div class="portfolio-item">
+            <div class="portfolio-placeholder">
+              <svg class="portfolio-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+              </svg>
+            </div>
+            <div class="portfolio-overlay">
+              <h3 class="portfolio-name">تطبيق خدمي</h3>
+              <p class="portfolio-description">تطوير تطبيق لتقديم الخدمات المنزلية</p>
+            </div>
+          </div>
+        </div>
+        <a href="work.html" class="view-more-btn">
+          شاهد المزيد
+        </a>
+      </section>
+      
+      <section class="testimonials-section">
+        <h2 class="testimonials-title">آراء العملاء</h2>
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">تجربة رائعة مع فريق محترف. قاموا بتنفيذ مشروعنا باحترافية عالية وفي الوقت المحدد.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">أحمد محمد</h4>
+                <p class="author-company">شركة التقنية الحديثة</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">خدمة ممتازة وتواصل مستمر. النتائج كانت أفضل من توقعاتنا والدعم الفني ممتاز.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">سارة علي</h4>
+                <p class="author-company">مؤسسة الإبداع</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">فريق عمل محترف ومبدع. ساعدونا في تحويل أفكارنا إلى واقع ملموس بشكل احترافي.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">خالد عبدالله</h4>
+                <p class="author-company">شركة المستقبل</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">تعاملت مع الشركة في عدة مشاريع وكانت النتائج مبهرة في كل مرة. أنصح بالتعامل معهم.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">محمد علي</h4>
+                <p class="author-company">شركة الأفق الرقمية</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">سرعة في التنفيذ ودقة في العمل. أسعار مناسبة وخدمة عملاء ممتازة. سعيد جداً بالتعامل معهم.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">فاطمة أحمد</h4>
+                <p class="author-company">مؤسسة النور التجارية</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">خدمة متميزة ومتابعة مستمرة. التصاميم عصرية وجذابة والتنفيذ احترافي جداً.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">عمر حسين</h4>
+                <p class="author-company">شركة النجاح للتجارة</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <svg class="quote-icon" viewBox="0 0 24 24">
+                <path d="M10,7L8,11H11V17H5V11L7,7H10M18,7L16,11H19V17H13V11L15,7H18Z"/>
+              </svg>
+            </div>
+            <p class="testimonial-text">خدمة ممتازة وسرعة في التنفيذ. أداؤهم كان فوق توقعاتي.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24">
+                  <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"/>
+                </svg>
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">علي عبد الله</h4>
+                <p class="author-company">شركة الأمل الإبداعية</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="technologies-section">
+        <h2 class="technologies-title">البرامج التي نجيدها</h2>
+        <div class="technologies-grid">
+          <div class="technology-item">
+            <svg class="technology-icon" viewBox="0 0 24 24">
+              <path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z"/>
+            </svg>
+            <span class="technology-name">HTML5</span>
+            <div class="technology-level">
+              <div class="level-fill" style="width: 95%"></div>
+            </div>
+          </div>
+    
+          <div class="technology-item">
+            <svg class="technology-icon" viewBox="0 0 24 24">
+              <path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z"/>
+            </svg>
+            <span class="technology-name">CSS3</span>
+            <div class="technology-level">
+              <div class="level-fill" style="width: 90%"></div>
+            </div>
+          </div>
+    
+          <div class="technology-item">
+            <svg class="technology-icon" viewBox="0 0 24 24">
+              <path d="M3,3H21V21H3V3M7.73,18.04C8.13,18.89 8.92,19.59 10.27,19.59C11.77,19.59 12.8,18.79 12.8,17.04V11.26H11.1V17C11.1,17.86 10.75,18.08 10.2,18.08C9.62,18.08 9.38,17.68 9.11,17.21L7.73,18.04M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86Z"/>
+            </svg>
+            <span class="technology-name">JavaScript</span>
+            <div class="technology-level">
+              <div class="level-fill" style="width: 85%"></div>
+            </div>
+          </div>
+    
+          <div class="technology-item">
+            <svg class="technology-icon" viewBox="0 0 24 24">
+              <path d="M21.53 4.306v15.363q0 .807-.472 1.433-.472.627-1.253.85l-6.888 1.974q-.136.037-.29.055-.156.019-.293.019-.396 0-.72-.105-.321-.106-.656-.292l-4.505-2.544q-.248-.137-.391-.366-.143-.23-.143-.515 0-.434.304-.738.304-.305.739-.305h5.831V4.964l-4.38 1.563q-.533.187-.856.658-.322.472-.322 1.03v8.078q0 .496-.248.912-.25.416-.683.651l-2.072 1.13q-.286.148-.571.148-.497 0-.844-.347-.348-.347-.348-.844V6.563q0-.62.33-1.19.328-.571.874-.881L19.086 2.5q.424-.148.844-.148.622 0 1.14.329.52.33.824.904.306.576.306 1.216v.792q0 .441-.097.818-.098.377-.298.697zM5.677 7.968v4.297h6.478V7.968H5.677zm7.788 0v4.297h6.478V7.968h-6.478zM5.677 13.734v4.297h6.478v-4.297H5.677zm7.788 0v4.297h6.478v-4.297h-6.478z"/>
+            </svg>
+            <span class="technology-name">Microsoft Office</span>
+            <div class="technology-level">
+              <div class="level-fill" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="faq-section">
+        <h2 class="faq-title">الأسئلة الشائعة</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              ما هي مدة تنفيذ المشاريع؟
+              <svg class="faq-icon" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              تختلف مدة تنفيذ المشاريع حسب حجم وتعقيد المشروع. نحدد المدة الزمنية بدقة بعد دراسة متطلبات المشروع بشكل كامل.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              هل تقدمون خدمات الصيانة بعد تسليم المشروع؟
+              <svg class="faq-icon" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              نعم، نقدم خدمات الصيانة والدعم الفني لجميع مشاريعنا لضمان استمرارية عملها بكفاءة.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              ما هي تكلفة المشاريع؟
+              <svg class="faq-icon" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              تختلف التكلفة حسب نوع المشروع ومتطلباته. نقدم عروض أسعار تنافسية تناسب جميع الميزانيات.
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              هل تقدمون خدماتكم خارج اليمن؟
+              <svg class="faq-icon" viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              نعم، نقدم خدماتنا لعملاء من مختلف أنحاء العالم ولدينا خبرة في التعامل مع مشاريع دولية.
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-title">عن الشركة</h3>
+            <p class="footer-content">
+              شركة رائدة في مجال التكنولوجيا والحلول الرقمية، نقدم خدمات متكاملة لتطوير الأعمال ودعم النمو الرقمي لعملائنا.
+            </p>
+          </div>
+    
+          <div class="footer-section">
+            <h3 class="footer-title">روابط سريعة</h3>
+            <ul class="footer-links">
+             <li><a href="home.html">الرئيسية</a></li>
+              <li><a href="work.html">أعمالنا</a></li>
+              <li><a href="we yemen brand.html">من نحن</a></li>
+              <li><a href="conecte.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-section">
+            <h3 class="footer-title">تواصل معنا</h3>
+            <div class="footer-contact-item">
+              <span>صنعاء، اليمن</span>
+              <svg class="contact-icon" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div class="footer-contact-item">
+              <span>moatazail20252024@gmail.com</span>
+              <svg class="contact-icon" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <div class="footer-contact-item">
+              <span>+967 773512690 - 775322729</span>
+              <svg class="contact-icon" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <div class="footer-social">
+              <a href="https://facebook.com" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                  <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                  <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10C2.38 10 2.38 10 2.38 10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                  <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                  <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>جميع الحقوق محفوظة © 2024 يمن براند</p>
+        </div>
+      </footer>
+      
+      <a href="https://wa.me/967 775322729" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+        </svg>
+      </a>
+      
+      <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        const isActive = faqItem.classList.contains('active');
+        
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+          item.classList.remove('active');
+        });
+        
+        // If the clicked item wasn't active, open it
+        if (!isActive) {
+          faqItem.classList.add('active');
+        }
+      });
+    });
+    
+    // This will animate the level bars when they come into view
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.width = entry.target.dataset.width || '0%';
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.level-fill').forEach(bar => {
+      bar.style.width = '0';
+      const finalWidth = bar.style.width;
+      bar.dataset.width = finalWidth;
+      observer.observe(bar);
+    });
+    
+    // Search functionality
+    document.querySelector('.search-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const searchTerm = document.querySelector('.search-input').value.trim();
+      if (searchTerm) {
+        // Here you can implement the actual search functionality
+        console.log('Searching for:', searchTerm);
+        // Optionally redirect to a search results page
+        // window.location.href = `/search?q=${encodeURIComponent(searchTerm)}`;
+      }
+    });
+    
+    // Search suggestions functionality (optional)
+    document.querySelector('.search-input').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.trim();
+      if (searchTerm.length >= 2) {
+        // Implement search suggestions based on the search term
+        console.log('Getting suggestions for:', searchTerm);
+      }
+    });
+      </script>
+ 
+    </body>
+</html>
